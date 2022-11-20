@@ -23,6 +23,6 @@ class ResultLayout extends Component
      */
     public function render()
     {
-        return view('components.result-layout');
+        return view('layouts.result-layout');
     }
 }

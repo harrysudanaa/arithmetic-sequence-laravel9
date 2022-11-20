@@ -1,5 +1,5 @@
 <x-home-layout>
-  <div class="flex flex-col items-center justify-center">
+  <div class="flex items-center justify-center p-4 bg-blue-200 border border-gray-200 rounded-lg shadow-md sm:p-6 md:p-8">
     <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-md sm:p-6 md:p-8">
       <form class="space-y-6" action="/store" method="POST">
         @csrf
