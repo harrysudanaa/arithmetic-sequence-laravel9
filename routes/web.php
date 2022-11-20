@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NumberController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -29,7 +30,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/', [NumberController::class, 'index']);
-Route::post('/store', [NumberController::class, 'store']);
+Route::get('/', [HomeController::class, 'index']);
+Route::post('/store', [HomeController::class, 'store']);
 
 require __DIR__ . '/auth.php';
